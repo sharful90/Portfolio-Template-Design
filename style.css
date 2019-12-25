@@ -1,0 +1,1680 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Ubuntu:300,400,500,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+/* header start */
+.menu_wrapper {
+    width: 100%;
+    height: 64px;
+    background: #eeedf3;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+}
+
+.logo img {
+    width: 160px;
+    height: 60px;
+}
+
+.right_content {
+    float: right;
+}
+
+.right_content li {
+    list-style: none;
+    display: inline-table;
+    padding: 23px 10px;
+}
+
+.right_content li a {
+    text-decoration: none;
+    color: #434343;
+    padding: 10px;
+    position: relative;
+    transition: 0.4s;
+
+}
+
+.right_content li a::before {
+    content: "";
+    width: 0px;
+    height: 100%;
+    background: rgb(87, 87, 87);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.4s ease;
+    left: 50%;
+}
+
+.right_content li a:hover::before {
+    width: 100%;
+    height: 100%;
+
+}
+
+.right_content li a:hover {
+    color: white;
+}
+
+/* header end */
+/* ============== */
+/* setion1 start */
+
+.slider_Wrapper {
+    width: 100%;
+    height: 730px;
+    position: relative;
+    top: 64px;
+}
+
+/* section1 end */
+/* ================ */
+/* section2 start */
+
+.container_wrapper1 {
+    width: 100%;
+    height: 700px;
+    background: #eeedf3;
+    overflow: hidden;
+    position: relative;
+    top: 64px;
+}
+
+.blog_wrapper {
+    padding-top: 150px;
+    padding-bottom: 250px;
+}
+
+/* left blog */
+
+.left_blog {
+    width: 50%;
+    float: left;
+}
+
+.left_blog h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 85px;
+}
+
+.left_blog p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 21px;
+    text-align: justify;
+    font-weight: 500;
+    color: #4b4b4b;
+}
+
+.paragraph1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left_blog a {
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    background: #1aa19a;
+    color: white;
+    padding: 13px 32px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    transition: 0.3s;
+
+}
+
+.left_blog a:hover {
+    box-shadow: 0px 5px 10px 0px #8f8f8f;
+}
+
+/* right blog */
+.right_blog {
+    width: 48%;
+    float: right;
+    margin-top: 14px;
+}
+
+.right_blog h2 {
+    margin: 11px 0px 20px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+}
+
+.animation_wrapper {
+    padding: 20px;
+}
+
+.A_text {
+    float: left;
+    margin-top: -4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.A_text h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* html animation */
+
+.HTML_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.HTML_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-1 9s infinite ease;
+}
+
+.HTML_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.HTML_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-1 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 99%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* css animation */
+
+.CSS_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.CSS_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-2 9s infinite ease;
+}
+
+.CSS_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.CSS_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-2 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 90%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* js animation */
+.JS_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.JS_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-3 9s infinite ease;
+}
+
+.JS_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.JS_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-3 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* php animation */
+
+.PHP_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.PHP_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-6 9s infinite ease;
+}
+
+.PHP_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.PHP_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-6 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 85%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* jquery animation */
+
+.JQUERY_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.JQUERY_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-4 9s infinite ease;
+}
+
+.JQUERY_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.JQUERY_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-4 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 65%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* bootstrap animation */
+
+.BOOTSTRAP_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.BOOTSTRAP_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-5 9s infinite ease;
+}
+
+.BOOTSTRAP_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.BOOTSTRAP_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-5 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+/* wordpress animation */
+
+
+
+.WORDPRESS_animation {
+    width: 80%;
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    line-height: 5px;
+}
+
+.WORDPRESS_animation span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    background-color: #1aa19a;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #1aa19a, #1aa19a);
+    animation: progress-anim-5 9s infinite ease;
+}
+
+.WORDPRESS_animation span:before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.WORDPRESS_animation span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+}
+
+
+@keyframes progress-anim-5 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* section2 end */
+/* =============== */
+/* section3 start */
+
+.container_wrapper2 {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background: #d8dbe4;
+    position: relative;
+    top: 64px;
+}
+
+.text_blog1 {
+    text-align: center;
+    padding: 75px 0px;
+}
+.text_blog1 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    color: #48aaa5;
+    font-weight: 900;
+    text-shadow: -1px 2px 1px #575656;
+    transition:3s;
+}
+.text_blog1:hover h3{
+    transform: rotateX(360deg);
+}
+.my_works_wrapper{
+    width:100%;
+    margin:auto;
+}
+.my_works{
+    display:grid;
+    grid-template-columns:auto auto;
+    margin-top: 40px;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.project{
+    width: 100%;
+    height: 250px;
+    position:relative;
+    cursor:pointer;
+}
+.project img{
+    width: 100%;
+    box-shadow: 4px 10px 10px #a3a3a3;
+    border: 5px solid #eeedf3;
+    height: 250px;
+}
+.image_information {
+    width:0%;
+    height: 260px;
+    background: #0f1528b8;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition:0.8s ease;
+    left:10px
+    
+}
+.image_information {
+    height: 260px;
+    background: #0f1528b8;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s ease;
+    left: 0px;
+    width:0%;
+}
+.image_information h3 {
+    position: absolute;
+    width: 237px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+.project:hover .image_information{
+    width: 102%;
+}
+
+/* section3 end */
+/* =============== */
+/* section4 start */
+
+.container_wrapper3{
+    width:100%;
+    height: 975px;
+    overflow:hidden;
+    background:#eeedf3;
+    position: relative;
+    top: 64px;
+}
+.text_blog2 {
+    text-align: center;
+    padding: 75px 0px;
+}
+.text_blog2 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #1aa19a;
+    font-weight: 900;
+    text-shadow: -1px 2px 1px #2e3749;
+}
+.text_blog2 p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.what_i_do{
+    display:grid;
+    grid-template-columns: 380px 380px 350px;
+    grid-template-rows: repeat(3,1fr);
+    height: 104%;
+    width: 100%;
+    justify-content: center;
+}
+.small_box_container {
+    width: 350px;
+    height: 295px;
+    background: #d8dbe4cf;
+    border-radius: 5px;
+    transition:0.3s ease;
+    float:left;
+}
+.small_box_container h3{
+    text-align:center;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.small_box_container p{
+    text-align:center;
+    padding: 16px;
+    font-family: roboto;
+    line-height: 22px;
+    font-weight: 400;
+    color: #646464;
+}
+.small_box_container:hover{
+    background: #d8dbe4cf;
+    box-shadow: 0px 4px 5px 1px #767676ad;
+}
+.icon_wrapper{
+    text-align:center;
+    padding: 40px;
+    position:relative;
+}
+.icon_wrapper img{
+    width:60px;
+}
+
+.icon_wrapper span::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background: #216984;
+    top: 115px;
+    left: 140px;
+}
+
+/* section4 end */
+/* =============== */
+/* section5 start */
+
+
+.container_wrapper4 {
+    width: 100%;
+    height:900px;
+    overflow: hidden;
+    background: url(img/OXI09.jpg)no-repeat;
+    position: relative;
+    top: 64px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blog_content1{
+    width: 100%;
+    height:100%;
+    background:#0a0d1cbf;
+}
+.text_blog3 {
+    text-align: center;
+    padding: 65px 0px;
+    position: absolute;
+    width: 1200px;
+}
+.text_blog3 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 70px;
+}
+.text_blog3 p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+    color: white;
+    width: 710px;
+    margin: auto;
+    line-height: 24px;
+}
+.our_team_blog_wrapper{position: absolute;top: 270px;}
+.our_team_blog{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 230px;
+    justify-content: center;
+    width: 1200px;
+    grid-template-rows: 250px;
+    height: 100%;
+}
+.image_wrap{
+    width:100%;
+    height:215px;
+    position:relative;
+    cursor:pointer;
+}
+.image_wrap img {
+    width: 230px;
+    height: 215px;
+    /* border: 4px solid #dcdfe7; */
+}
+
+.names{
+    position:absolute;
+    width: 231px;
+    height: 0px;
+    background:#0a0d1cbf;
+    left: 0px;
+    top: 0px;
+    transition: 0.8s ease;
+    overflow: hidden;
+}
+.names h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: 100px;
+    transition: 0.8s ease;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+.names p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: 130px;
+    transition: 0.8s ease;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+.image_wrap:hover .names{
+    height: 215px;
+}
+
+/* section5 end */
+/* =============== */
+/* section6 start */
+
+.container_wrapper5{
+    width:100%;
+    height:300px;
+    background:#eeedf3;
+    position: relative;
+    top: 64px;
+}
+.wrapper_text_icon{ 
+    margin: auto;
+    width: 1020px; 
+    padding: 128px 0px;
+}
+.it_container {
+    display: inline-table;
+    width: 250px;
+    }
+.wrap_icon{
+    float:left;
+    font-size: 35px;
+    margin: 0px 25px;
+    color: #4f4f4f;
+}
+.wrap_text{
+    float:left;
+}
+.wrap_text span{ 
+    font-size: 17px;
+}
+.wrap_text p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #3a3a3a;
+}
+
+
+/* section6 end */
+/* =============== */
+/* section7 start */
+
+.container_wrapper6{
+    width:100%;
+    height: 900px;
+    overflow: hidden;
+    background: #d8dbe4;
+    position: relative;
+    top: 64px;
+}
+.text_blog4 {
+    text-align: center;
+    padding: 65px 0px;
+    position: absolute;
+    width: 1200px;
+}
+.text_blog4 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #1aa19a;
+    font-weight: 900;
+    line-height: 70px;
+    text-shadow: -1px 2px 1px #2e3749;
+}
+.text_blog4 p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #050505;
+    width: 710px;
+    margin: auto;
+    line-height: 24px;
+}
+
+.left_group {
+    position: absolute;
+    top: 265px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 40%;
+    grid-template-rows: repeat(3,1fr);
+    height: 95%;
+}
+.left_group img {
+    width: 289px;
+    box-shadow: 5px 5px 5px #848484;
+    height: 235px;
+}
+
+/* left_group */
+/* =============== */
+/* right_group_animation */
+
+.right_group_animation {
+    width: 44%;
+    float: right;
+    height: 100%;
+    margin-top: 25%;
+}
+.right_group_animation h2 {
+    margin: 25px 0px 6px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    color: #d92545;
+    text-shadow: 0px 1px 0px #5f5f5f;
+}
+
+.animation_wrapper1 {
+    padding: 30px 0px;
+}
+
+.A_text2 {
+    float: left;
+    margin-top: -4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.A_text2 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* progress_animation1 */
+
+.progress_animation1 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 7px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    width: 333px;
+    float: right;
+  }
+  .progress_animation1 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 9px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-anim-11 10s infinite linear;
+  }
+  .progress_animation1 span:after {
+    position: absolute;
+    top: 0;
+    left: 0;        
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #ffffff 25%,
+                                     rgba(0, 0, 0, 0) 25%,
+                                     rgba(0, 0, 0, 0) 50%,
+                                     #ffffff 50%,
+                                     #ffffff 75%,
+                                     rgba(0, 0, 0, 0) 75%,
+                                     rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-anim-11-after 0.5s infinite linear;
+  }
+.progress_animation1 h3{
+    float: right;
+    margin-top: -25px;
+}
+  @keyframes progress-anim-11 {
+    0% {
+      width: 95%;
+    }
+    50% {
+      /* width: 80%; */
+    }
+    100% {
+      width: 95%;
+    }
+  }
+
+  @keyframes progress-anim-11-after {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 30px 100%;
+    }
+  }
+
+/* progress_animation2 */
+
+.progress_animation2 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 7px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    width: 333px;
+    float: right;
+  }
+  .progress_animation2 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 9px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-anim-22 10s infinite linear;
+  }
+  .progress_animation2 span:after {
+    position: absolute;
+    top: 0;
+    left: 0;        
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #ffffff 25%,
+                                     rgba(0, 0, 0, 0) 25%,
+                                     rgba(0, 0, 0, 0) 50%,
+                                     #ffffff 50%,
+                                     #ffffff 75%,
+                                     rgba(0, 0, 0, 0) 75%,
+                                     rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-anim-22-after 0.5s infinite linear;
+  }
+.progress_animation2 h3{  
+    float: right;
+    margin-top: -15px;
+}
+  @keyframes progress-anim-22 {
+    0% {
+      width: 85%;
+    }
+    50% {
+      /* width: 80%; */
+    }
+    100% {
+      width: 85%;
+    }
+  }
+
+  @keyframes progress-anim-22-after {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 30px 100%;
+    }
+  }
+
+/* progress_animation3 */
+
+.progress_animation3 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 7px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    width: 333px;
+    float: right;
+  }
+  .progress_animation3 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 9px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-anim-33 10s infinite linear;
+  }
+  .progress_animation3 span:after {
+    position: absolute;
+    top: 0;
+    left: 0;        
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #ffffff 25%,
+                                     rgba(0, 0, 0, 0) 25%,
+                                     rgba(0, 0, 0, 0) 50%,
+                                     #ffffff 50%,
+                                     #ffffff 75%,
+                                     rgba(0, 0, 0, 0) 75%,
+                                     rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-anim-33-after 0.5s infinite linear;
+  }
+.progress_animation3 h3{  
+    float: right;
+    margin-top: -15px;
+}
+  @keyframes progress-anim-33 {
+    0% {
+      width: 85%;
+    }
+    50% {
+      /* width: 80%; */
+    }
+    100% {
+      width: 85%;
+    }
+  }
+
+  @keyframes progress-anim-33-after {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 30px 100%;
+    }
+  }
+
+/* progress_animation4 */
+
+.progress_animation4 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 7px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    width: 333px;
+    float: right;
+  }
+  .progress_animation4 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 9px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-anim-44 10s infinite linear;
+  }
+  .progress_animation4 span:after {
+    position: absolute;
+    top: 0;
+    left: 0;        
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #ffffff 25%,
+                                     rgba(0, 0, 0, 0) 25%,
+                                     rgba(0, 0, 0, 0) 50%,
+                                     #ffffff 50%,
+                                     #ffffff 75%,
+                                     rgba(0, 0, 0, 0) 75%,
+                                     rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-anim-44-after 0.5s infinite linear;
+  }
+.progress_animation4 h3{  
+    float: right;
+    margin-top: -15px;
+}
+  @keyframes progress-anim-44 {
+    0% {
+      width: 50%;
+    }
+    50% {
+      /* width: 80%; */
+    }
+    100% {
+      width: 50%;
+    }
+  }
+
+  @keyframes progress-anim-44-after {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 30px 100%;
+    }
+  }
+
+/* progress_animation5 */
+
+.progress_animation5 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 7px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    width: 333px;
+    float: right;
+  }
+  .progress_animation5 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 9px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-anim-55 10s infinite linear;
+  }
+  .progress_animation5 span:after {
+    position: absolute;
+    top: 0;
+    left: 0;        
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #ffffff 25%,
+                                     rgba(0, 0, 0, 0) 25%,
+                                     rgba(0, 0, 0, 0) 50%,
+                                     #ffffff 50%,
+                                     #ffffff 75%,
+                                     rgba(0, 0, 0, 0) 75%,
+                                     rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-anim-55-after 0.5s infinite linear;
+  }
+.progress_animation5 h3{
+    float: right;
+    margin-top: -25px;
+}
+  @keyframes progress-anim-55 {
+    0% {
+      width: 99%;
+    }
+    50% {
+      /* width: 80%; */
+    }
+    100% {
+      width: 99%;
+    }
+  }
+
+  @keyframes progress-anim-55-after {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 30px 100%;
+    }
+  }
+
+/* progress_animation6 */
+
+.progress_animation6 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 7px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    width: 333px;
+    float: right;
+  }
+  .progress_animation6 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 9px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-anim-66 10s infinite linear;
+  }
+  .progress_animation6 span:after {
+    position: absolute;
+    top: 0;
+    left: 0;        
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #ffffff 25%,
+                                     rgba(0, 0, 0, 0) 25%,
+                                     rgba(0, 0, 0, 0) 50%,
+                                     #ffffff 50%,
+                                     #ffffff 75%,
+                                     rgba(0, 0, 0, 0) 75%,
+                                     rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-anim-66-after 0.5s infinite linear;
+  }
+.progress_animation6 h3{
+    float: right;
+    margin-top: -25px;
+}
+  @keyframes progress-anim-66 {
+    0% {
+      width: 100%;
+    }
+    50% {
+      /* width: 80%; */
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes progress-anim-66-after {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 30px 100%;
+    }
+  }
+
+/* section7 end */
+/* =============== */
+/* section8 start */
+
+ .container_wrapper7{
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+    background: #eeedf3;
+    position: relative;
+    top: 64px;
+ }
+
+ .text_blog5 {
+    text-align: center;
+    padding: 65px 0px;
+    position: absolute;
+    width: 1200px;
+}
+.text_blog5 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #1aa19a;
+    font-weight: 900;
+    line-height: 70px;
+    text-shadow: -1px 2px 1px #2e3749;
+}
+.text_blog5 p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #050505;
+    width: 710px;
+    margin: auto;
+    line-height: 24px;
+}
+.video_list_container{
+    padding: 23% 0%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
+    height: 800px;
+}
+.video iframe {
+    width: 363px;
+    height: 203px;
+    border: 3px solid #1aa19a;
+    box-shadow: 4px 5px 6px #848484;
+}
+
+/* section8 end */
+/* =============== */
+/* section9 start */
+
+.container_wrapper8{
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background:white;
+    position: relative;
+    top: 64px;  
+}
+
+.text_blog6 {
+    padding: 80px 0px 100px 0px;
+}
+
+.text_blog6 h2 {
+    font-size: 44px;
+    font-weight: 550;
+    text-align: center;
+    text-shadow: -1px 2px 1px #2e3749;
+    color: #1ea094;
+}
+
+.contact_us_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.map iframe{    
+    width: 650px;   
+    height: 470px;
+}
+.from {
+    height: 420px;
+    width: 362px;
+}
+
+.from p {
+    color: #1aa19a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0px 2px 1px #2e3749;
+}
+
+.from input {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 38px 0px;
+    background: none;
+    border: none;
+    color: #b7b9c4;
+    border-bottom: 1px solid #51515175;
+    outline: none;
+}
+
+.from textarea {
+    width: 354px;
+    height: 90px;
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #f6f6f67a;
+    outline: none;
+}
+
+.from button {
+    width: 100%;
+    padding: 15px 30px;
+    background: #1aa19a;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: white;
+    border-radius: 28px;
+}
+
+/* section9 end */
+/* =============== */
+/* Footer start */
+
+.container_wrapper9{
+    width: 100%;
+    height: 390px;
+    background-color:#1e2035;
+    color: #7e8390;
+    position: relative;
+    top: 64px;  
+}
+
+.footer_blog_wrapper {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.foter_blog h3 {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.foter_blog li {
+    list-style: none;
+    line-height: 31px;
+    
+}
+
+.foter_blog li a {
+    text-decoration: none;
+    color: #7e8390;
+    font-weight: 600;
+    cursor: pointer;
+    transition:0.3s;
+}
+.foter_blog li a:hover{
+    color:white;
+}
+.primary_icon li {
+    display: inline-table;
+    width: 38px;
+    margin-bottom: 10px;
+}
+
+.foter_blog input {
+    background: white;
+    padding: 12px 10px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+}
+
+.foter_blog span {
+    background: #1aa19a;
+    color: white;
+    border-radius: 100px;
+    padding: 13px 28px;
+    font-size: 12px;
+}
+
+.copyright_blog_wrapper {
+    height: 90px;
+    background-color: #1e2035;
+    width: 100%;
+    border-top: 1px solid #dddddd4d;
+}
+
+.copyright_blog {
+    display: grid;
+    grid-template-columns: auto auto;
+    transform: translateY(35px);
+}
+
+.copyright_blog2 {
+    display: grid;
+    justify-content: flex-end;
+}
+
+/* ===================== */
